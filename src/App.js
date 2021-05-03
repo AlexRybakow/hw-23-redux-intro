@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Content from './components/Content';
+import NavBar from './components/Navigation';
+import { loadPost } from './store';
+import {useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+   dispatch(loadPost())
+  },[dispatch])
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='header'>
+        <NavBar/>
+      </div>
+      <div className="app-content">
+       <Content/>
+      </div>
     </div>
   );
 }
