@@ -1,23 +1,30 @@
 {
   "files": {
-    "main.css": "/hw23-redux-intro/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/hw23-redux-intro/static/js/main.84f3a081.chunk.js",
-    "main.js.map": "/hw23-redux-intro/static/js/main.84f3a081.chunk.js.map",
-    "runtime-main.js": "/hw23-redux-intro/static/js/runtime-main.f2002873.js",
-    "runtime-main.js.map": "/hw23-redux-intro/static/js/runtime-main.f2002873.js.map",
-    "static/js/2.0b79168e.chunk.js": "/hw23-redux-intro/static/js/2.0b79168e.chunk.js",
-    "static/js/2.0b79168e.chunk.js.map": "/hw23-redux-intro/static/js/2.0b79168e.chunk.js.map",
-    "static/js/3.7a511787.chunk.js": "/hw23-redux-intro/static/js/3.7a511787.chunk.js",
-    "static/js/3.7a511787.chunk.js.map": "/hw23-redux-intro/static/js/3.7a511787.chunk.js.map",
+    "main.css": "/hw23-redux-intro/static/css/main.dc39d058.chunk.css",
+    "main.js": "/hw23-redux-intro/static/js/main.02bb1871.chunk.js",
+    "main.js.map": "/hw23-redux-intro/static/js/main.02bb1871.chunk.js.map",
+    "runtime-main.js": "/hw23-redux-intro/static/js/runtime-main.9ce090c2.js",
+    "runtime-main.js.map": "/hw23-redux-intro/static/js/runtime-main.9ce090c2.js.map",
+    "static/js/2.df25b4f3.chunk.js": "/hw23-redux-intro/static/js/2.df25b4f3.chunk.js",
+    "static/js/2.df25b4f3.chunk.js.map": "/hw23-redux-intro/static/js/2.df25b4f3.chunk.js.map",
+    "static/js/3.66c1438d.chunk.js": "/hw23-redux-intro/static/js/3.66c1438d.chunk.js",
+    "static/js/3.66c1438d.chunk.js.map": "/hw23-redux-intro/static/js/3.66c1438d.chunk.js.map",
     "index.html": "/hw23-redux-intro/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/hw23-redux-intro/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.0b79168e.chunk.js.LICENSE.txt": "/hw23-redux-intro/static/js/2.0b79168e.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/hw23-redux-intro/static/media/logo.6ce24c58.svg"
+    "static/css/main.dc39d058.chunk.css.map": "/hw23-redux-intro/static/css/main.dc39d058.chunk.css.map",
+    "static/js/2.df25b4f3.chunk.js.LICENSE.txt": "/hw23-redux-intro/static/js/2.df25b4f3.chunk.js.LICENSE.txt",
+    "static/media/Gentlemen.cbf05b61.jpg": "/hw23-redux-intro/static/media/Gentlemen.cbf05b61.jpg",
+    "static/media/dry-eye.057f8ab5.jpg": "/hw23-redux-intro/static/media/dry-eye.057f8ab5.jpg",
+    "static/media/fletcher.408c0865.jpg": "/hw23-redux-intro/static/media/fletcher.408c0865.jpg",
+    "static/media/fletcher_homepage.ca4082a3.png": "/hw23-redux-intro/static/media/fletcher_homepage.ca4082a3.png",
+    "static/media/mickey.a3e8c77d.jpg": "/hw23-redux-intro/static/media/mickey.a3e8c77d.jpg",
+    "static/media/raymond.09ab1b03.jpg": "/hw23-redux-intro/static/media/raymond.09ab1b03.jpg",
+    "static/media/rosalind.8f60b061.jpg": "/hw23-redux-intro/static/media/rosalind.8f60b061.jpg",
+    "static/media/the-coach.56b5da8a.jpg": "/hw23-redux-intro/static/media/the-coach.56b5da8a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f2002873.js",
-    "static/js/2.0b79168e.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.84f3a081.chunk.js"
+    "static/js/runtime-main.9ce090c2.js",
+    "static/js/2.df25b4f3.chunk.js",
+    "static/css/main.dc39d058.chunk.css",
+    "static/js/main.02bb1871.chunk.js"
   ]
 }
