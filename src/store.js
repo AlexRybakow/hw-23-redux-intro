@@ -7,7 +7,7 @@ const posts = [
         name: 'The Coach',
         photo: CoachAvatar,
         nickname: '@I_am_the_coach',
-        date: new Date().toLocalString(),
+        date: new Date().toLocaleString(),
         text: 'Kids stab, girls shout, boys punch. Grown-ups fight with their heads!',
         image: CoachImage,
     }
@@ -35,20 +35,20 @@ const reducer = (state = initialView, action) => {
 
 }
 
-const loadPost = () => (
+export const loadPost = () => (
     {
         type: 'add-post'
     }
 ) 
 
-const newPost = (post) => (
+export const newPost = (post) => (
     {
         type: 'new-post',
         payload: post
     }
 )
 
-export const store = createStore(reducer);
+const store = createStore(reducer);
 
-export default loadPost;
-export default newPost;
+export default store;
+

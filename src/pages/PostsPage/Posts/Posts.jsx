@@ -1,4 +1,5 @@
 import React from 'react';
+import './posts.css'
 import { useSelector } from 'react-redux';
 
 const Posts = (props) => {
@@ -6,14 +7,14 @@ const Posts = (props) => {
     return (
         <>
         {posts.map((post) => (
-        <div className='container'>
+        <div className='post-container'>
         <div className='user-avatar'><img src={post.photo} alt='avatar'></img>       
         </div>
         <div className='post-body'>
         <div className='user-info'>
         <p className='user-name'>{post.name}</p>
         <p className='user-nickname'>{post.nickname}</p>
-        <p className='post-date'>{date}</p>   
+        <p className='post-date'>{post.date}</p>   
         </div>
         <div className='post-content'>
             <p className='post-text'>{post.text}</p>
