@@ -15,12 +15,12 @@ function App() {
   
   return (
     <div className="App">
-      <div className='header'>
+      <div className='header flex'>
         <NavBar/>
       </div>
-      <div className="app-content">
+      <main className="app-content">
        <Content/>
-      </div>
+      </main>
     </div>
   );
 }

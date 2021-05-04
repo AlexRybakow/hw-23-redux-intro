@@ -97,7 +97,7 @@ const Input = (props) => {
                     </select>
                     <input className='link-input' type="text" placeholder='Enter the image link here' 
                     onChange={event => {setImage(event.target.value)}}/>
-                    <textarea className="message-input" placeholder="Write your message here..." cols="30" rows="10"
+                    <textarea className="message-input" placeholder="Write your message here..." cols="30" rows="7"
                     onChange={event => {setText(event.target.value)}}></textarea>
          </div>
          <div className="button flex">
