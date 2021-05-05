@@ -2,7 +2,7 @@ import React from 'react';
 import './input.css'
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import newPost from '../../../store' ;
+import { newPost } from '../../../store' ;
 import CoachAvatar from '../../../components/assets/the-coach.jpg';
 import MickeyPhoto from '../../../components/assets/mickey.jpg'
 import RayPhoto from '../../../components/assets/raymond.jpg'
@@ -47,20 +47,26 @@ const DryEye = {
 }
 
 const Input = (props) => {
+    const dispatch = useDispatch();
     const [name, setName] = useState();
     const [photo, setPhoto] = useState();
     const [nickname, setNickname] = useState();
     const [text, setText] = useState();
     const [image, setImage] = useState();
 
- const AddPost = () => {
-     useDispatch(newPost({
+ const AddPost = (event) => {
+     event.preventDefault();
+     dispatch(newPost({
     photo: photo,
     name: name,
     nickname: nickname,
     text: text,
     image: image
-     }))
+     }));
+     
+    document.getElementById('link-input').value = ''; 
+    document.getElementById('message-input').value = '';
+     
  }
 
  const chooseAuthor = (userinput) => {
@@ -88,20 +94,21 @@ const Input = (props) => {
      <form className='input-form'>
          <div className='input-box'>
          <select className='author-choice' value={name} onChange={event => {setName(event.target.value);{chooseAuthor(event.target.value)}}}>
+                        <option selected value="Select author">Select author</option>
                         <option value={Mickey.name}>Mickey Pearson</option>
-                        <option value= {Ray.name} selected>Raymond Smith</option>
+                        <option value= {Ray.name}>Raymond Smith</option>
                         <option value= {Coach.name}>Coach</option>
                         <option value= {Fletcher.name}>Fletcher</option>
                         <option value= {Rosalind.name}>Rosalind</option>
                         <option value= {DryEye.name}>Dry Eye</option>
                     </select>
-                    <input className='link-input' type="text" placeholder='Enter the image link here' 
+                    <input className='user-input' id='link-input' type="text" placeholder='Enter the image link here' 
                     onChange={event => {setImage(event.target.value)}}/>
-                    <textarea className="message-input" placeholder="Write your message here..." cols="30" rows="7"
+                    <textarea className='user-input' id='message-input' placeholder="Write your message here..." cols="30" rows="7"
                     onChange={event => {setText(event.target.value)}}></textarea>
          </div>
          <div className="button flex">
-             <button onClick={AddPost}>Add Post</button>
+             <button className='submit-button' onClick={AddPost}>Add Post</button>
          </div>
      </form>
  )

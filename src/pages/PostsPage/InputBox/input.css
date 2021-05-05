@@ -1,6 +1,6 @@
 .author-choice,
-.link-input,
-.message-input {
+#link-input,
+#message-input {
   margin-top: 40px;
   border: 1px solid;
   border-color: yellowgreen;

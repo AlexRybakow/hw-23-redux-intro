@@ -27,7 +27,7 @@ const reducer = (state = initialView, action) => {
          case 'new-post':
              return {
                  ...state,
-                 posts: posts.concat(posts.push(action.payload))
+                 posts: [...state.posts,action.payload]
              };
              default: 
              return state;
